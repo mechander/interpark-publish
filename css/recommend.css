@@ -1,0 +1,130 @@
+.recommend {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 90px;
+}
+.recommend-inner {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+.recommend-header {
+  position: relative;
+}
+.recommend-title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.recommend-txt {
+  position: relative;
+  display: block;
+  font-size: 1.8rem;
+  color: #a7a9a7;
+  text-align: center;
+}
+.recommend-main {
+  position: relative;
+}
+.recommend-category {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  padding: 25px 0;
+}
+.recommend-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+.recommend-list li {
+  position: relative;
+  text-align: center;
+}
+.recommend-cate-bt {
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  line-height: 42px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 18rem;
+  padding: 0 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.recommend-cate-bt-active {
+  background-color: #333;
+  border-color: #333;
+  font-weight: 700;
+  color: #fff;
+}
+.recommend-slide-wrap {
+  position: relative;
+  height: 425px;
+  margin-top: 23px;
+}
+.recommend-slide-item {
+  width: 100%;
+  height: 425px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+.recommend-link {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+.recommend-img {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+.recommend-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recommend-info {
+  height: calc(100% - 310px);
+  padding: 22px 20px;
+}
+.recommend-good-list {
+}
+.recommend-good-list li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.recommend-good-info-price {
+  font-size: 1.8rem;
+  color: #111;
+  font-weight: 400;
+}
+.recommend-good-info-price b {
+  font-size: 2rem;
+  color: #ef3e43;
+  font-weight: 700;
+}
+.recommend-good-info-price em {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+}
+.recommend-good-info-desc {
+  line-height: 1.4;
+  font-size: 1.5rem;
+  color: #111;
+  word-break: break-all;
+}
+.recommend-footer {
+  position: relative;
+  text-align: center;
+}
