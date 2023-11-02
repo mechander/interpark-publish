@@ -1,3 +1,46 @@
 {
-  "total": 13
+  "total": 6,
+  "good_1": {
+    "image": "images/r1.jpg",
+    "tit": "태양의서커스 〈루치아〉",
+    "desc": "잠실종합운동장 내 빅탑",
+    "date": "2023.11.11- 2024.02.25",
+    "point": "좌석우위",
+    "url": "a.html"
+  },
+  "good_2": {
+    "image": "images/r1.jpg",
+    "tit": "태양의서커스 〈루치아〉",
+    "desc": "잠실종합운동장 내 빅탑",
+    "date": "2023.11.11- 2024.02.25",
+    "point": "좌석우위",
+    "url": "a.html"
+  },
+  "good_3": {
+    "image": "images/r1.jpg",
+    "tit": "태양의서커스 〈루치아〉",
+    "desc": "잠실종합운동장 내 빅탑",
+    "date": "2023.11.11- 2024.02.25",
+    "point": "좌석우위",
+    "url": "a.html"
+  },
+  "good_4": {
+    "image": "images/r1.jpg",
+    "tit": "태양의서커스 〈루치아〉",
+    "desc": "잠실종합운동장 내 빅탑",
+    "date": "2023.11.11- 2024.02.25",
+    "point": "좌석우위",
+    "url": "a.html"
+  },
+  "good_5": {
+    "image": "images/r1.jpg",
+    "tit": "태양의서커스 〈루치아〉",
+    "desc": "잠실종합운동장 내 빅탑",
+    "date": "2023.11.11- 2024.02.25",
+    "point": "좌석우위",
+    "url": "a.html"
+  },
+  "good_6": {
+    "url": "a.html"
+  }
 }

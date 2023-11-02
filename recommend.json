@@ -9,7 +9,7 @@
   },
   "good_2": {
     "image": "images/r2.jpg",
-    "discount": 38,
+    "discount": 0,
     "price": 12900,
     "desc": "유혜광 통등심돈까스 10장 (총 5팩)",
     "url": "a.html"
@@ -78,10 +78,6 @@
     "url": "a.html"
   },
   "good_12": {
-    "image": "images/r12.jpg",
-    "discount": 13,
-    "price": 26000,
-    "desc": "설명입니다.",
     "url": "a.html"
   }
 }

@@ -9,14 +9,33 @@
 // window.onload = function(){
 
 // }
+window.addEventListener("click", function () {
+ 
+
+    fileOutDate();
+});
+
+
 window.addEventListener("load", function () {
+  function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  
   // 추천 상품 슬라이드 기능
   // 글로써 코딩 시나리오 작성: 의사코드
   // 1. 외부 데이터를 불러온다.
   //: 외부 데이터 파일명.json
   const fileName = "recommend.json";
 
+  
+
+   function fileOutDate(){
+
+   
+////////////////////////////////////////////////
   // 외부 데이터 가져올때 작성법
+  // fetch, axios
   const xhr = new XMLHttpRequest();
   // 외부의 파일을 열어라
   // Get 방식으로 파일을 열어준다
@@ -42,6 +61,8 @@ window.addEventListener("load", function () {
       makeHtmlTag(json);
     }
   };
+}
+  ///////////////////////////////////////////////////////
   //html 태그를 만드는 기능
   // html 태그를 만드는 기능
   function makeHtmlTag(_res) {
@@ -61,7 +82,17 @@ window.addEventListener("load", function () {
       const obj = _res["good_" + index];
       //console.log(obj);
 
-      const tempTag = `
+      let tempTag = "";
+
+      //마지막 json에서는 url만 읽어들인다.
+      //그렇지 않으면 일반적으로 모두 출력한다.
+      if (i === _res.total - 1) {
+        tempTag = `
+          <div class="swiper-slide">바로가기</div>
+        `;
+      } else {
+        // 일반적인 내용을 출력한다.
+        tempTag = `
         <div class="swiper-slide">
           <div class="recommend-slide-item">
             <a href="${obj.url}" class="recommend-link">
@@ -72,8 +103,8 @@ window.addEventListener("load", function () {
                 <ul class="recommend-good-list">
                   <li>
                     <span class="recommend-good-info-price">
-                      <b>${obj.discount}%</b>
-                      <em>${obj.price}</em>
+                      <b>${obj.discount === 0 ? "" : obj.discount + "%"}</b>
+                      <em>${numberWithCommas(obj.price)}</em>
                       원
                     </span>
                   </li>
@@ -88,6 +119,7 @@ window.addEventListener("load", function () {
           </div>
         </div>
       `;
+      }
       //console.log(tempTag);
       htmlRecommendTag += tempTag;
     }
@@ -124,3 +156,4 @@ window.addEventListener("load", function () {
   // 4. swiper 작동시킨다.
   //const recommendSwiper = new swiperRecommend(".recommend-slide");
 });
+

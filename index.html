@@ -14,6 +14,7 @@
     <script src="js/live.js"></script>
     <script src="js/books.js"></script>
     <script src="js/event.js"></script>
+
     
     <!-- Link Swiper's CSS -->
     <link
@@ -171,11 +172,11 @@
             <div class="recommend-main">
               <div class="recommend-category">
                 <ul class="recommend-list">
-                  <li><button class="recommend-cate-bt">쎈딜</button></li>
-                  <li><button class="recommend-cate-bt">베스트</button></li>
-                  <li><button class="recommend-cate-bt">블프데이</button></li>
-                  <li> <button class="recommend-cate-bt">디지털프라자</button></li>
-                  <li><a href="#" class="recommend-cate-bt">소담상회</a></li>
+                  <li><button class="recommend-cate-bt" id="tab1" onclick="tab1">쎈딜</button></li>
+                  <li><button class="recommend-cate-bt" id="tab2">베스트</button></li>
+                  <li><button class="recommend-cate-bt" id="tab3">블프데이</button></li>
+                  <li> <button class="recommend-cate-bt" id="tab4">디지털프라자</button></li>
+                  <li><a href="#" class="recommend-cate-bt" id="tab5">소담상회</a></li>
                 </ul>
               </div>
               <div class="recommend-slide-wrap">
@@ -259,7 +260,7 @@
                                 <li><span class="ticket-good-info-tit">태양의서커스 〈루치아〉</span></li>
                                 <li><p class="ticket-good-info-desc">잠실종합운동장 내 빅탑</p></li>
                                 <li><span class="ticket-good-info-date">2023.11.11- 2024.02.25</span></li>
-                                <li><span></span></li>
+                                <li><span class="ticket-good-info-point seat">좌석우위</span></li>
                               </ul>
                           </div>
                         </a>
@@ -274,7 +275,7 @@
                                 <li><span class="ticket-good-info-tit">태양의서커스 〈루치아〉</span></li>
                                 <li><p class="ticket-good-info-desc">잠실종합운동장 내 빅탑</p></li>
                                 <li><span class="ticket-good-info-date">2023.11.11- 2024.02.25</span></li>
-                                <li><span></span></li>
+                                <li><span class="ticket-good-info-point only">단독판매</span></li>
                               </ul>
                           </div>
                         </a>
@@ -335,92 +336,140 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v1.png" alt="" />
+                        <a href="#" class="live-link">
+                          <div class="live-img"><img src="images/l1.jpg" alt="" /></div>
+                          <div class="live-info">
+                            <div class="live-info-sect1">
+                              <span class="live-info-state">LIVE</span>
+                              <p class="live-info-tit">[나트랑] 스완도르 올인클루시브 5일 70만원대~</p>
+                            </div>
+                            <div class="live-info-sect2">
+                              <div class="live-info-sect2-inner">
+                                <span class="live-info-date">11월 02일 (목)</span>
+                                <p class="live-info-time">18:00</p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="live-detail">
+                          <div class="live-detail-info">
+                            <div class="detail-img"><img src="images/detail1.png"  alt="" /></div>
+                            <div class="detail-info">
+                              <span class="detail-tit">[카쇼라X스완도르 리조트]올인올인올인올인올인</span>
+                              <p class="detail-info_inr"><em class="detail-discount">12%</em><span class="detail-price">35,000</span>원</p>
+                            </div>
+                          </div>
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v2.jpg" alt="" />
+                        <a href="#" class="live-link">
+                          <div class="live-img"><img src="images/l1.jpg" alt="" /></div>
+                          <div class="live-info">
+                            <div class="live-info-sect1">
+                              <span class="live-info-state">LIVE</span>
+                              <p class="live-info-tit">[나트랑] 스완도르 올인클루시브 5일 70만원대~</p>
+                            </div>
+                            <div class="live-info_sect2">
+                              <span class="live-info-date">11월 02일 (목)</span>
+                              <p class="live-info-time">18:00</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="live-detail">
+                          <div class="live-detail-info">
+                            <div class="detail-img"><img src="images/detail1.png"  alt="" /></div>
+                            <div class="detail-info">
+                              <span class="detail-tit">[카쇼라X스완도르 리조트]올인</span>
+                              <p class="detail-info_inr"><em class="detail-discount">12%</em><span class="detail-price">35,000</span>원</p>
+                            </div>
+                          </div>
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v3.jpg" alt="" />
+                        <a href="#" class="live-link">
+                          <div class="live-img"><img src="images/l1.jpg" alt="" /></div>
+                          <div class="live-info">
+                            <div class="live-info-sect1">
+                              <span class="live-info-state">LIVE</span>
+                              <p class="live-info-tit">[나트랑] 스완도르 올인클루시브 5일 70만원대~</p>
+                            </div>
+                            <div class="live-info_sect2">
+                              <span class="live-info-date">11월 02일 (목)</span>
+                              <p class="live-info-time">18:00</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="live-detail">
+                          <div class="live-detail-info">
+                            <div class="detail-img"><img src="images/detail1.png"  alt="" /></div>
+                            <div class="detail-info">
+                              <span class="detail-tit">[카쇼라X스완도르 리조트]올인</span>
+                              <p class="detail-info_inr"><em class="detail-discount">12%</em><span class="detail-price">35,000</span>원</p>
+                            </div>
+                          </div>
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v4.jpg" alt="" />
+                        <a href="#" class="live-link">
+                          <div class="live-img"><img src="images/l1.jpg" alt="" /></div>
+                          <div class="live-info">
+                            <div class="live-info-sect1">
+                              <span class="live-info-state">LIVE</span>
+                              <p class="live-info-tit">[나트랑] 스완도르 올인클루시브 5일 70만원대~</p>
+                            </div>
+                            <div class="live-info_sect2">
+                              <span class="live-info-date">11월 02일 (목)</span>
+                              <p class="live-info-time">18:00</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="live-detail">
+                          <div class="live-detail-info">
+                            <div class="detail-img"><img src="images/detail1.png"  alt="" /></div>
+                            <div class="detail-info">
+                              <span class="detail-tit">[카쇼라X스완도르 리조트]올인</span>
+                              <p class="detail-info_inr"><em class="detail-discount">12%</em><span class="detail-price">35,000</span>원</p>
+                            </div>
+                          </div>
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v5.jpg" alt="" />
+                        <a href="#" class="live-link">
+                          <div class="live-img"><img src="images/l1.jpg" alt="" /></div>
+                          <div class="live-info">
+                            <div class="live-info-sect1">
+                              <span class="live-info-state">LIVE</span>
+                              <p class="live-info-tit">[나트랑] 스완도르 올인클루시브 5일 70만원대~</p>
+                            </div>
+                            <div class="live-info_sect2">
+                              <span class="live-info-date">11월 02일 (목)</span>
+                              <p class="live-info-time">18:00</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="live-detail">
+                          <div class="live-detail-info">
+                            <div class="detail-img"><img src="images/detail1.png"  alt="" /></div>
+                            <div class="detail-info">
+                              <span class="detail-tit">[카쇼라X스완도르 리조트]올인</span>
+                              <p class="detail-info_inr"><em class="detail-discount">12%</em><span class="detail-price">35,000</span>원</p>
+                            </div>
+                          </div>
                         </a>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
-                    <div class="swiper-slide">
-                      <div class="live-slide-item">
-                        <a href="#">
-                          <img src="images/v6.png" alt="" />
-                        </a>
-                      </div>
-                    </div> 
                   </div>
-                  <div class="live-button-prev"></div>
-                  <div class="live-button-next"></div>
                 </div>
+                <div class="slide-next-bt"><img src="images/slider_arrow.svg" alt="" /></div>
+                <div class="slide-prev-bt"><img src="images/slider_arrow.svg" alt="" /></div>
               </div>
             </div>
             <div class="live-footer">
@@ -660,7 +709,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  // const swiperRecommend = new Swiper(".recommend-slide", {});
-</script>
